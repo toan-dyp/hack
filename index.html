@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Begin CSS-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">                
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/toastr.css">
+  <!-- End CSS -->
+  <!-- Begin Script -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js" integrity="sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+  <!-- End Script -->
+  <title>Version 3</title>
+</head>
+<body style="background-color: #0d1117">
+  <nav class="sticky-top navbar navbar-expand-lg navbar-dark bg-dark" style="background-color: #161b22;">
+    <div class="container-fluid">
+      <a class="navbar-brand"><strong>Version 3</strong></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse collapse" id="navbarColor01">
+        <ul id = "info" class="invisible navbar-nav me-auto mb-2 mb-lg-0">
+        </ul>
+        <form class="d-flex">
+          <input id="text_1" class="form-control me-2 d-none" type="search" placeholder='[{"_id...' aria-label="Search">
+          <input id="text_2" class="form-control me-2 d-none" type="search" placeholder='[{"answer...' aria-label="Search">
+            <select class="form-select me-2" id="option">
+              <option selected disabled>Lựa chọn</option>
+              <option value="1">Xem trước đề</option>
+              <option value="2">Kiểm tra các câu sai</option>
+              <option value="3">Full chứ năng</option>
+            </select>        
+          <button id='st' class="btn btn-outline-light" type="button">Start</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div id="main" class="container text-white" style="height: 1500px; margin-top: 1rem;position: relative;">  
+    <!-- Đơn -->
+
+  </div>
+  <!-- DEV -->
+  <script src="js/card.js"></script>
+  <script src="js/decode.js"></script>
+  <script src="js/toastr.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

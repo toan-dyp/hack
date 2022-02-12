@@ -1,0 +1,66 @@
+@font-face {
+  font-family: 'TheGoodMonolith';
+  font-style: normal;
+  font-weight: 500;
+  src: url('TheGoodMonolith.woff') format('woff');
+}
+
+*{
+  font-family: 'TheGoodMonolith', sans-serif;                                              
+}
+.justify {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center; 
+}
+.katex-display {
+  display: inline-block!important;
+  margin: 0!important;
+  text-align: unset;
+}
+
+ol {
+  line-height:180%
+}
+
+li{
+  padding-left: 10px;
+}
+.Caus{
+  counter-reset: lis;
+}
+.Cau{
+  display: block;
+}
+.Cau::before {
+  display: inline-block;
+  content: "Câu " counter(lis)":";
+  counter-increment: lis;
+  margin-right: 10px;
+}
+.Cau + .Cau {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #FFFFFF
+}
+
+.Phans{
+  counter-reset: item;
+}
+.Phan{
+  display: block;
+  border: 1px solid #FFFFFF;
+  margin-top: 10px;
+  padding: 10px 10px 10px 10px;
+}
+.Phan::before {
+  display: inline-block;
+  content: "Phần " counter(item)":";
+  counter-increment: item;
+  margin-right: 10px;
+}
+
+.Phan .Cau {
+  border: none;
+}
